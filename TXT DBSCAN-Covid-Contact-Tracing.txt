@@ -1,0 +1,46 @@
+********DBSCAN-Covid-Contact-Tracing********
+
+Dhiraj H. Gawhare
+Roll Number: 22M0062
+M. Tech (Aerodynamics)
+IIT Bombay.
+
+
+
+Live Data Clustering and Analysis
+This repository contains Python code for clustering and analyzing live location data using the DBSCAN algorithm. The code reads live location data from a JSON file, applies DBSCAN for clustering, and visualizes the results.
+
+Prerequisites
+Python 3.x
+Required libraries: numpy, pandas, matplotlib, seaborn, scikit-learn
+Getting Started
+Clone this repository to your local machine.
+
+Install the required libraries if not already installed:
+
+Copy code
+pip install numpy pandas matplotlib seaborn scikit-learn
+Run the Python script live_data_analysis.py.
+
+Usage
+The script reads live location data from livedata.json and saves it as livedata.csv.
+
+It visualizes the data distribution using KDE plots and cluster scatterplots.
+
+DBSCAN clustering is applied to the data using specified parameters.
+
+The clustered data is saved as clustered.csv.
+
+Infected nodes related to a given name can be identified using the get_infected_names() function.
+
+Results
+The script outputs visualizations that help understand the distribution and clusters within the live location data.
+
+Clustered data is saved in clustered.csv.
+
+Notes
+Ensure that livedata.json is in the same directory as the script.
+
+Adjust DBSCAN parameters (eps, min_samples) for optimal clustering based on your data.
+
+This script provides basic insights into live data clustering; customize it to your specific needs.
